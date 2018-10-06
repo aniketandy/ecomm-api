@@ -24,7 +24,7 @@ UserController.prototype.login = function(req,res){
             res.json(result);
         }        
     },err=>{
-        res.status(401);
+        res.status(err);
         res.json(err);
     });
 }
